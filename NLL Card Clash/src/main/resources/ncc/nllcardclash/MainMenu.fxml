@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import java.net.URL?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ncc.nllcardclash.Controllers.MainMenuController" styleClass="root"
+            prefHeight="500" prefWidth="750">
+
+    <stylesheets>
+        <URL value="@CSS/MainMenu.css" />
+    </stylesheets>
+
+    <!-- Title Label -->
+    <Text layoutX="20" layoutY="20" styleClass="label-title" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="20">
+        <effect>
+            <DropShadow color="black" radius="4" spread="0.5"/>
+        </effect>
+        NLL Card Clash
+    </Text>
+
+    <GridPane layoutX="70" layoutY="70" prefWidth="610" prefHeight="360" hgap="10" vgap="10" alignment="CENTER">
+        <!-- TeamBuilder Button -->
+        <Button text="Team Builder" onAction="#navigateToTeamBuilder" GridPane.columnIndex="0"
+                GridPane.rowIndex="0" styleClass="team-builder"/>
+
+        <!-- Mission Select -->
+        <Button text="Mission Select" onAction="#navigateToMissionSelect" GridPane.columnIndex="1"
+                GridPane.rowIndex="0" styleClass="mission-select"/>
+    </GridPane>
+
+    <!-- Quit Button at the bottom right -->
+    <Button text="Quit" onAction="#quitGame" styleClass="quit-button" AnchorPane.rightAnchor="20" AnchorPane.bottomAnchor="20"/>
+</AnchorPane>

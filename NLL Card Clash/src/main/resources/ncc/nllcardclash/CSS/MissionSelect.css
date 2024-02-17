@@ -1,0 +1,35 @@
+/* Style for AnchorPane (background) */
+.root {
+    -fx-background-color: #333333;
+    -fx-clip-shape: rectangle;
+}
+
+/* Define styles for different JavaFX elements */
+.label-title {
+    -fx-font-family: monospace;
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-fill: #FFFFFF;
+}
+
+/* Style for Buttons */
+.button {
+    -fx-font-family: monospace;
+    -fx-font-size: 16px;
+    -fx-pref-width: 220px;
+    -fx-pref-height: 40px;
+    -fx-text-fill: white;
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px;
+    -fx-padding: 5px 10px;
+    -fx-background-radius: 8px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.5) , 2,2,0,0 );
+}
+
+.mission-select {
+    -fx-background-color: #004080;
+}
+
+.back-button {
+    -fx-background-color: #800000;
+}

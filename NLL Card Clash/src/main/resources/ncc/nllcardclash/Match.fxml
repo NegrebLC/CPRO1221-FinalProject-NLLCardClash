@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import java.net.URL?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ncc.nllcardclash.Controllers.MatchController"
+            styleClass="root">
+
+    <stylesheets>
+        <URL value="@CSS/Match.css" />
+    </stylesheets>
+
+    <Label text="Match Results" AnchorPane.topAnchor="20" AnchorPane.leftAnchor="20"/>
+    <Label text=" " AnchorPane.topAnchor="20" AnchorPane.rightAnchor="20"
+           fx:id="missionIDLabel"/>
+
+    <GridPane AnchorPane.topAnchor="70" AnchorPane.leftAnchor="70" AnchorPane.rightAnchor="70"
+              AnchorPane.bottomAnchor="70" hgap="20" vgap="10" alignment="CENTER">
+        <padding>
+            <Insets top="10" right="10" bottom="10" left="10"/>
+        </padding>
+
+        <!-- Display User's Team -->
+        <ListView fx:id="userTeamListView" GridPane.rowIndex="0" GridPane.columnIndex="0"
+                  prefWidth="200" prefHeight="300">
+        </ListView>
+        <Label text="User's Team" GridPane.rowIndex="1" GridPane.columnIndex="0"
+               styleClass="player-label"/>
+
+        <!-- Display Opponents -->
+        <ListView fx:id="opponentTeamListView" GridPane.rowIndex="0" GridPane.columnIndex="1"
+                  prefWidth="200" prefHeight="300">
+        </ListView>
+        <Label text="Opponent's Team" GridPane.rowIndex="1" GridPane.columnIndex="1"
+            styleClass="opp-label"/>
+
+        <!-- Display Match Result -->
+        <Label fx:id="matchResultLabel" text="Match Result" GridPane.rowIndex="2" GridPane.columnIndex="0"
+            styleClass="result-label"/>
+    </GridPane>
+
+    <!-- Next Button -->
+    <Button fx:id="nextButton" text="Next" onAction="#proceedToNextAction"
+            AnchorPane.rightAnchor="20" AnchorPane.bottomAnchor="20" styleClass="next-button"/>
+</AnchorPane>

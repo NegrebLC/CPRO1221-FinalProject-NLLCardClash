@@ -1,0 +1,57 @@
+/* Style for AnchorPane (background) */
+.root {
+    -fx-background-color: #333333;
+    -fx-clip-shape: rectangle;
+}
+
+/* Title Label Style */
+.label {
+    -fx-font-family: monospace;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+
+/* ListView Style */
+.list-view {
+    -fx-font-size: 14px;
+    -fx-background-color: #777777;
+    -fx-border-color: #000000;
+    -fx-border-width: 1px;
+}
+
+/* Button Style */
+.button {
+    -fx-font-size: 16px;
+    -fx-pref-width: 220px;
+    -fx-pref-height: 40px;
+    -fx-text-fill: white;
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px;
+    -fx-padding: 5px 10px;
+    -fx-background-radius: 8px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 2, 2, 0, 0);
+}
+
+/* Specific styles for each button */
+.next-button {
+    -fx-font-family: monospace;
+    -fx-font-size: 16px;
+    -fx-background-color: #007f00;
+}
+
+.result-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #fafad2;
+}
+
+.opp-label {
+    -fx-text-fill: #f08080;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 2, 2, 0, 0);
+}
+
+.player-label {
+    -fx-text-fill: #90ee90;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 2, 2, 0, 0);
+}
